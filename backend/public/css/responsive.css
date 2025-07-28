@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .tab {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .action-btns {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  #searchInput {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .create-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input, textarea, select, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #logoutBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .invoice-container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
