@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Invoice</title>
+  <link rel="stylesheet" href="./css/invoice.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <button class="create-btn">
+      <a id="ainsidebutton" href="./employeedashboard.html">Back to Dashboard</a>
+    </button>
+    <h2>Submit New Invoice</h2>
+    <form>
+      <label for="requestedBy">Requested By</label>
+      <input type="text" id="requestedBy" name="requestedBy"  readonly />
+
+      <label for="date">Date of Invoice</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="amount">Amount (INR)</label>
+      <input type="number" step="0.01" id="amount" name="amount" placeholder="In Rupees" required />
+
+      <label for="description">Description / Purpose</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <label for="attachment">Upload Bill</label>
+      <input type="file" id="attachment" name="attachment" accept=".jpg,.jpeg,.png,.pdf" required />
+
+      <button type="submit">Submit Invoice</button>
+    </form>
+  </div>
+
+  <script src="./js/invoice.js"></script>
+</body>
+</html>

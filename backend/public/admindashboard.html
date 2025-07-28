@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./css/admindashboard.css" />
+</head>
+<body>
+  <header>
+    <h1 id="typewriter">Admin Panel - Invoice Management</h1>
+    <span>Logged in as <strong>Admin</strong></span>
+  </header>
+
+  <div class="tabs">
+    <div class="tab now">Pending</div>
+    <div class="tab">Approved</div>
+    <div class="tab">Rejected</div>
+  </div>
+
+  <div class="search-box">
+    <label for="searchInput" id="labelforsearchinput">Search by Employee:</label>
+    <input type="text" id="searchInput" placeholder="Type a name..." />
+  </div>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Invoice ID</th>
+          <th>Employee</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+ 
+      </tbody>
+    </table>
+  </main>
+  <script src="../jsfiles/data.js"></script>
+  <script src="./js/admindashboard.js"></script>
+</body>
+</html>

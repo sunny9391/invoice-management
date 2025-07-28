@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: rgb(244, 246, 248);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(44, 62, 80);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(236, 240, 241);
+    padding: 15px 30px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: rgb(220, 221, 225);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tab.now {
+    background-color: rgb(52, 152, 219);
+    color: white;
+}
+
+main {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+th {
+    background-color: rgb(248, 248, 248);
+    color: rgb(51, 51, 51);
+}
+
+.action-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.approve {
+    background-color: rgb(46, 204, 113);
+    color: white;
+}
+
+.reject {
+    background-color: rgb(231, 76, 60);
+    color: white;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.pending {
+    background-color: rgb(255, 243, 205);
+    color: rgb(133, 100, 4);
+}
+
+.approved {
+    background-color: rgb(212, 237, 218);
+    color: rgb(21, 87, 36);
+}
+
+.rejected {
+    background-color: rgb(248, 215, 218);
+    color: rgb(114, 28, 36);
+}
+
+.search-box {
+    padding: 20px 30px;
+}
+
+#labelforsearchinput {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+#searchInput {
+    padding: 8px 14px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid rgb(204, 204, 204);
+   
+}
+
+

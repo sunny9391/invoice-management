@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice Details - Admin View</title>
+  <link rel="stylesheet" href="../css/fullinvoice.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Invoice Details</h1>
+    <a href="admindashboard.html">← Back to Dashboard</a>
+  </header>
+
+  <main>
+    <div class="invoice-container">
+      <h2 id="invoice-id">Invoice: </h2>
+      <p><strong>Employee:</strong> <span id="employee-name"></span></p>
+      <p><strong>Date:</strong> <span id="invoice-date"></span></p>
+      <p><strong>Amount:</strong> <span id="invoice-amount"></span></p>
+      <p><strong>Description:</strong> <span id="invoice-description"></span></p>
+      <p><strong>Status:</strong> <span id="invoice-status"></span></p>
+
+      <div class="document-section">
+        <h3>Supporting Document</h3>
+        <a id="doc-link" href="#" target="_blank">
+          <img id="doc-preview" src="#" alt="Invoice Receipt" />
+        </a>
+      </div>
+
+      <div class="actions">
+        <button class="btn approve">Approve</button>
+        <button class="btn reject">Reject</button>
+      </div>
+    </div>
+  </main>
+<script src="../jsfiles/data.js"></script>
+  <script src="../js/fullinvoice.js"></script>
+</body>
+</html>

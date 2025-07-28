@@ -1,0 +1,24 @@
+Previously i have implemented invoice management app using local storage .
+
+now i have created an mongodb database and backend files like .env for database intergration
+and i have inserted data into my data base instance and set it to public so that it can be used in other systems also.
+
+i have created api's for data 
+
+
+final:
+
+i have created new api's like 
+
+http://localhost:3000/api/employeeinvoices/:name
+
+http://localhost:3000/api/employeeinvoices/byid/_id
+
+i have created mongodb database and 
+
+i can approve and reject invoices dynamically and can modify the databse using backend
+
+updated all the frontend files to work with backend implementation and connect databse with it.
+
+created seperate but hardcoded data for login ...(CAN FIND IN login.js)
+
