@@ -23,8 +23,7 @@ if (!auth) {
 const tbody = document.querySelector("tbody");
 tbody.innerHTML = "";
 
-
-fetch(`http://localhost:3000/api/employeeinvoices/${auth.fullName}`)
+fetch(`/api/employeeinvoices/${auth.fullName}`)
   .then((res) => {
     if (!res.ok) throw new Error("Failed to fetch invoices");
     return res.json();

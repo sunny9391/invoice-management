@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       documentUrl: "uploaded_dummy.jpg" 
     };
 
-    fetch("http://localhost:3000/api/addinvoice", {
+    fetch("/api/addinvoice", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

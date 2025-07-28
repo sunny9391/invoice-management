@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const invoiceId = params.get("id");
 
-fetch(`http://localhost:3000/api/employeeinvoices/byid/${invoiceId}`)
+fetch(`api/employeeinvoices/byid/${invoiceId}`)
   .then(res => {
     if (!res.ok) {
       throw new Error("Invoice not found");

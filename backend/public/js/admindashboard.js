@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function fetchInvoices() {
-  fetch("http://localhost:3000/api/employeeinvoices")
+  fetch("/api/employeeinvoices")
     .then(res => res.json())
     .then(data => {
       invoices = data;
