@@ -124,3 +124,8 @@ tabs.forEach(tab => {
 searchInput.addEventListener("input", () => {
   renderTable(currentTab, searchInput.value);
 });
+
+document.getElementById('logoutBtn').addEventListener('click', () => {
+    localStorage.removeItem('authToken');  // if you use token-based auth
+    window.location.href = '/index.html';  // or the page you want to redirect to
+  });

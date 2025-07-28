@@ -1,4 +1,4 @@
-// app.js
+
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
@@ -9,11 +9,11 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
+
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -23,10 +23,9 @@ mongoose.connect(process.env.MONGODB_URI, {
   console.error('MongoDB connection error:', err);
 });
 
-// Routes
+
 
 app.use(express.static(path.join(__dirname, 'public')));
-// 🔁 GET all invoices
 app.get('/api/employeeinvoices', async (req, res) => {
   try {
     const invoices = await Invoice.find();
@@ -36,7 +35,6 @@ app.get('/api/employeeinvoices', async (req, res) => {
   }
 });
 
-// 🔁 GET invoices by employee
 app.get('/api/employeeinvoices/:employee', async (req, res) => {
   const employee = req.params.employee.trim().toLowerCase();
   try {
@@ -54,7 +52,6 @@ app.get('/api/employeeinvoices/:employee', async (req, res) => {
   }
 });
 
-// 🔁 Add invoice
 app.post('/api/addinvoice', async (req, res) => {
   const { employee, date, amount, description, documentUrl } = req.body;
 
@@ -94,7 +91,6 @@ app.post('/api/addinvoice', async (req, res) => {
   }
 });
 
-// 🔁 Update status by invoice _id
 app.put('/api/employeeinvoices/byid/:id', async (req, res) => {
   const { id } = req.params;
   const { status } = req.body;
@@ -121,7 +117,6 @@ app.put('/api/employeeinvoices/byid/:id', async (req, res) => {
   }
 });
 
-// 🔁 Get invoice by _id
 app.get('/api/employeeinvoices/byid/:id', async (req, res) => {
   const { id } = req.params;
 
@@ -139,7 +134,6 @@ app.get('/api/employeeinvoices/byid/:id', async (req, res) => {
   }
 });
 
-// Start server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });

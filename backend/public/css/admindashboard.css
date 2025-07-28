@@ -126,3 +126,12 @@ th {
 }
 
 
+#logoutBtn{
+    background-color: #3498db;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+}
