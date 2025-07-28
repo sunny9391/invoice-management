@@ -4,6 +4,7 @@ const text = heading.textContent;
 heading.textContent = '';
 let i = 0;
 
+
 function typeWriter() {
   if (i < text.length) {
     heading.textContent += text.charAt(i);
@@ -127,5 +128,5 @@ searchInput.addEventListener("input", () => {
 
 document.getElementById('logoutBtn').addEventListener('click', () => {
     localStorage.removeItem('authToken');  // if you use token-based auth
-    window.location.href = '/index.html';  // or the page you want to redirect to
+    window.location.href = './';  // or the page you want to redirect to
   });
