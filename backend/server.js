@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const Invoice = require('./models/invoice');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -24,6 +25,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Routes
 
+app.use(express.static(path.join(__dirname, 'public')));
 // 🔁 GET all invoices
 app.get('/api/employeeinvoices', async (req, res) => {
   try {
