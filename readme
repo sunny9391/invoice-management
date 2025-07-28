@@ -1,0 +1,15 @@
+for log in :             
+
+admin login :   
+
+use username:sunnyadmin
+password:password123
+
+for employee login:
+
+use username:sunnyemp
+password:password123
+
+i used local storage to provide simple login authentication
+
+you can add new login credentiasl in the login.js file in the public/js folder..
