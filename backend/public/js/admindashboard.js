@@ -92,7 +92,7 @@ function attachActionListeners() {
 
 function updateInvoiceStatus(_id, newStatus) {
   console.log(`Updating invoice ${_id} to ${newStatus}`);
-  fetch(`http://localhost:3000/api/employeeinvoices/byid/${_id}`, {
+  fetch(`/api/employeeinvoices/byid/${_id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
