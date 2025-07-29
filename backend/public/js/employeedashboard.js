@@ -46,6 +46,6 @@ fetch(`/api/employeeinvoices/${auth.fullName}`)
     alert("Could not load invoices from server.");
   });
 document.getElementById('logoutBtn').addEventListener('click', () => {
-    localStorage.removeItem('authToken');  // if you use token-based auth
-    window.location.href = '/index.html';  // or the page you want to redirect to
+    localStorage.removeItem('authToken');  
+    window.location.href = '/index.html';  
   });

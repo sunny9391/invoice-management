@@ -127,6 +127,6 @@ searchInput.addEventListener("input", () => {
 });
 
 document.getElementById('logoutBtn').addEventListener('click', () => {
-    localStorage.removeItem('authToken');  // if you use token-based auth
-    window.location.href = './';  // or the page you want to redirect to
+    localStorage.removeItem('authToken');  
+    window.location.href = './';  
   });
