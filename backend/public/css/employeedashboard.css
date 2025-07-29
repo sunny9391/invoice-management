@@ -80,4 +80,5 @@ tr:hover {
     color: white;
     font-size: medium;
     font-weight: 500;
+    cursor: pointer;
 }
